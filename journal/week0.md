@@ -1,10 +1,12 @@
 # Week 0 — Billing and Architecture
 
 Napkin: Produced in the live session. This is a high level conceptual design of the requirements given by the CTO, marketing and clients for the development of the Cruddur application.
+[Lucid charts napkin direct link](https://lucid.app/lucidchart/91da6577-6e84-4570-89ab-c6d9e75de256/edit?viewport_loc=-377%2C-41%2C2219%2C1108%2C0_0&invitationId=inv_cb8b6048-9f6e-4783-8db9-61236c6adf0f)
 ![Napkin text](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/Napkin_Diagram_Week_0.PNG)
 
 
 Architecture Diagram: A more detailed logical architectural output from the requirements given. Shows the different AWS services that we aim to use to develop the Cruddur application.
+[Lucid charts architecture direct link](https://lucid.app/lucidchart/b3741afa-0b37-46a1-b041-9c1155c02095/edit?viewport_loc=-1878%2C-1140%2C1922%2C960%2C0_0&invitationId=inv_4ba04c27-093f-465a-9033-21e6eef7119c)
 ![Architecture text](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/Architecture_Recreated.PNG)
 
 Opened a support ticket for pipeline limit increase after researchcing service limits of specific services:
