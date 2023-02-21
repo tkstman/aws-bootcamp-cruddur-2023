@@ -25,3 +25,5 @@ Reference the below links for details on setting up billing alarm, aws budget, c
 [Budget Setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/awsscript/json/budget.json)
 
 [Budget Notification Setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/awsscript/json/budget-notifications-with-subscribers.json)
+
+[EventBridge Setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/eventbridge.PNG)
