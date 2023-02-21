@@ -17,6 +17,7 @@ Generate Admin user and setup MFA for Root user:
 ![Admin_User text](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/usercredentials.PNG)
 
 
+
 Reference the below links for details on setting up billing alarm, aws budget, cloudshell and aws cli usage:
 [Gitpod environment setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/commit/2d41280149e27f70db83edc00ffb82d2325632da#diff-370a022e48cb18faf98122794ffc5ce775b2606b09a9d1f80b71333425ec078e)
 
@@ -27,3 +28,6 @@ Reference the below links for details on setting up billing alarm, aws budget, c
 [Budget Notification Setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/awsscript/json/budget-notifications-with-subscribers.json)
 
 [EventBridge Setup](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/eventbridge.PNG)
+
+Delivered SNS From EventBridge
+![EventBridge SNS Delivery](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/eventbridge2.PNG)
