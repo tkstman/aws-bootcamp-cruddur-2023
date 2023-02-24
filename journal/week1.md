@@ -214,7 +214,7 @@ networks:
     driver: bridge
     name: cruddur
 ```
-[Connected Backend and Frontend](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/proofweek1.PNG)
+![Connected Backend and Frontend](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/proofweek1.PNG)
 
 ## Adding DynamoDB Local and Postgres
 
@@ -252,7 +252,7 @@ To install the postgres client into Gitpod
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
 ```
-[Postgresql UI](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/postgres_ui_connection.PNG)
+![Postgresql UI](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/postgres_ui_connection.PNG)
 
 ### DynamoDB Local
 
