@@ -297,3 +297,33 @@ volumes:
 
 
 # Homework
+## Run the dockerfile CMD as an external script
+- This was unclear, what was being requested but based on setup of Dockerfiles and containers, external scripts were called(review [Dockerfile](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/backend-flask/Dockerfile))
+
+## Push and tag a image to DockerHub (they have a free tier)
+![push to dockerhub](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/dockerhubimagepush.PNG)
+
+On Dockerhub
+![on dockerhub](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/dockerhubimagepushdocker.PNG)
+
+## Use multi-stage building for a Dockerfile build
+- This was not required as the application is not that complex (maybe done in the future)
+
+## Implement a healthcheck in the V3 Docker compose file
+![Docker Healthcheck](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/dockerhealthcheck.PNG)
+
+## Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
+- Most of the best practices were already implemented in the Dockerfiles construction.
+
+## Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
+![Docker Setup On Windows](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/steps_to_install_docker_windows.PNG)
+
+Docker Installed On Local Machine
+![Local machine installation confirmation](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/confirmation_of_installation_of_docker_local_machine.PNG)
+
+Clone cruddur on Local Machine
+![Clone Cruddur](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/clone_to_localmachine.PNG)
+
+## Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
+Show Docker container running and responding on ec2 instance.
+![docker on ec2](https://github.com/tkstman/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/dockeronec2.PNG)
