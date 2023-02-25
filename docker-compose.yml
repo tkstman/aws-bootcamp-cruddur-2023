@@ -7,6 +7,11 @@ services:
     build: ./backend-flask
     ports:
       - "4567:4567"
+    healthcheck:
+      test: curl --fail -s http://localhost:4567/ || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
     volumes:
       - ./backend-flask:/backend-flask
   
@@ -18,6 +23,11 @@ services:
       - POSTGRES_PASSWORD=password
     ports:
       - '5432:5432'
+    healthcheck:
+      test: curl --fail -s http://localhost:5432/ || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
     volumes: 
       - db:/var/lib/postgresql/data
 
@@ -30,6 +40,11 @@ services:
     container_name: dynamodb-local
     ports:
       - "8000:8000"
+    healthcheck:
+      test: curl --fail -s http://localhost:8000/ || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
     volumes:
       - "./docker/dynamodb:/home/dynamodblocal/data"
     working_dir: /home/dynamodblocal
@@ -40,6 +55,11 @@ services:
     build: ./frontend-react-js
     ports:
       - "3000:3000"
+    healthcheck:
+      test: curl --fail -s http://localhost:3000/ || exit 1
+      interval: 2m30s
+      timeout: 10s
+      retries: 3
     volumes:
       - ./frontend-react-js:/frontend-react-js
 
