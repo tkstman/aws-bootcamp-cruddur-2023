@@ -44,13 +44,13 @@ FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 
 frontend = os.getenv('FRONTEND_URL')
-backend = os.getenv('BACKEND_URL')
+backend = os.getenv('BACKEND_URL') #This was missing from the backend docker image (docker-compose.yml) resulting in cors issues
 origins = [frontend, backend]
 cors = CORS(
   app, 
   resources={r"/api/*": {"origins": origins}},
   expose_headers="location,link",
-  allow_headers="content-type,if-modified-since",
+  allow_headers=["content-type","if-modified-since","traceparent"],
   methods="OPTIONS,GET,HEAD,POST"
 )
 
