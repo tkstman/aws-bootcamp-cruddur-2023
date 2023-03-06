@@ -14,6 +14,11 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+#xray-sdk added
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+
 #These are the honeycomb.io telemetry tools
 from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
@@ -28,6 +33,12 @@ from opentelemetry.sdk.trace.export import SimpleSpanProcessor, ConsoleSpanExpor
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter())
 provider.add_span_processor(processor)
+
+
+#xray-sdk added
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
 
 
 # Export span to console for debugging
