@@ -34,13 +34,6 @@ provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter())
 provider.add_span_processor(processor)
 
-
-#xray-sdk added
-xray_url = os.getenv("AWS_XRAY_URL")
-xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
-XRayMiddleware(app, xray_recorder)
-
-
 # Export span to console for debugging
 simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(simple_processor)
@@ -64,6 +57,11 @@ cors = CORS(
   allow_headers=["content-type","if-modified-since","traceparent"],
   methods="OPTIONS,GET,HEAD,POST"
 )
+
+#xray-sdk added
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
 
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
